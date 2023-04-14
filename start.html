@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Links -->
+    <!-- Museo Moderno -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Colonna MT -->
+    <link href="https://fonts.cdnfonts.com/css/colonna-mt" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/icon/logo.png">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css-files/header.css">
+    <link rel="stylesheet" href="css-files/start.css">
+    <link rel="stylesheet" href="css-files/footer.css">
+    <link rel="stylesheet" href="css-files/media-lines-vertikal.css">
+    <link rel="stylesheet" href="css-files/media-lines-horizontal.css">
+    <link rel="stylesheet" href="css-files/media-main-vertikal.css">
+    <link rel="stylesheet" href="css-files/media-main-horizontal.css">
+    <link rel="stylesheet" href="css-files/fonts.css">
+    <link rel="stylesheet" href="css-files/color.css">
+    <!-- Java Scripts -->
+    <script src="js-files/script.js"></script>
+    <!-- Titel -->
+    <title>Lagerfeuer-Genüsse</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Scrollbalcken */
+        /* width */
+        ::-webkit-scrollbar {
+            background-color: #151515;
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #C55A11;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            box-shadow: 0px 0.2px 5px 2px #C55A11;
+        }
+    </style>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="headline.html"></div>
+    <div class="start-bg bg-color">
+        <div class="welcome font-museo font-color">
+            <h3 class="w1">Willkommen bei -</h3>
+            <h2 class="font-colonna headline-color w2">Lagerfeuer-Genüsse</h2>
+            <p class="w3">Bei uns findet ihr allerhand Rezepte für ein gemütliches<br>
+                Beisammensein an einem feurig knisterndem Lagerfeuer.</p>
+            <p class="w3">Von Feuertopf und Kesselgulasch<br>
+                über Glut Cooking und Garen am offenen Feuer<br>
+                bis zu leckerem Stockbrot und Pfannengerichten.</p>
+            <p class="w3">Bei uns finden Sie bestimmt das Richtige!</p>
+            <p class="w3">Unsere Rezepte sind leicht verständlich erklärt,<br>
+                an Personen-Anzahlen anpassbar<br>
+                und ganz einfach an Ihrem Lagerfeuer nachzukochen.</p>
+            <p class="w3">Alles für Ihre Feierlichkeit, den Camping Ausflug oder für<br>
+                die gemütliche Zweisamkeit unter Sternenhimmel.</p>
+        </div>
+    </div>
+    <div class="founder bg-color">
+        <p class="founder-pic font-museo font-color">Schon Appetit bekommen?
+            <span>Probieren sie unser</span>
+            <button class="founder-button" style="background-image: url(img/button/button1.jpg);">
+                <a href="recipe-Tomatosoup.html" class="founder-button-text font-colonna font-color">Rezept des
+                    Tages</a></button>
+            <span>Gutes gelingen wünschen ihnen</span>
+        </p>
+        <p class="founder-pic font-museo font-color"><img class="pic1" src="img/founder/kevin.jpg">Kevin Funck</p>
+        <p class="founder-pic font-museo font-color"><img class="pic1" src="img/founder/jens.jpg">Jens Labudda</p>
+        <p class="founder-pic font-museo font-color"><img class="pic1" src="img/founder/basti.jpg">Sebastian Rieder</p>
+    </div>
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>

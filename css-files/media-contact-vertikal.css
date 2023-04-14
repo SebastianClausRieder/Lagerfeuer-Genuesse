@@ -1,0 +1,59 @@
+@media(max-width: 600px) {
+
+    /* Kontakt */
+    
+    .height {
+        height: auto;
+    }
+
+    .contact-title {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .contact-text {
+        width: 95%;
+        padding: 0;
+    }
+
+    .contact-contain2 {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+        align-items: center;
+    }
+
+    .contact-name {
+        width: 95%;
+    }
+
+    .contact-message {
+        width: 95%;
+    }
+
+    /* Mail Send */
+
+    .mail-send {
+        background-position: left;
+    }
+
+    .ms-head {
+        margin-right: 0;
+    }
+
+    .ms-headline {
+        text-shadow:  1px  1px 2.5px black,
+            1px -1px 2.5px black,
+            -1px  1px 2.5px black,
+            -1px -1px 2.5px black;
+    }
+
+    .ms-text {
+        text-shadow:  1px  1px 2.5px black,
+            1px -1px 2.5px black,
+            -1px  1px 2.5px black,
+            -1px -1px 2.5px black;
+    }
+}

@@ -1,0 +1,97 @@
+.nav-bar {
+    height: 75px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid #C55A11;
+    box-shadow: 0px 0.2px 5px 0.5px #C55A11;
+}
+
+.logo {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.lg-logo {
+    height: 41px;
+}
+
+.menu {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.list-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.list-container a {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 225ms ease-in-out;
+}
+
+.list-container li {
+    list-style-type: none;
+}
+
+.list-container a:hover {
+    text-shadow: 1px 1px 2px #F78100;
+    transition: all 225ms ease-in-out;
+}
+
+.links {
+    font-size: 18px;
+}
+
+.cutter {
+    height: 18px;
+    margin-bottom: 7px;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.animate {
+    animation: 2s fadeIn ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

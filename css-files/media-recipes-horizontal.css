@@ -1,0 +1,29 @@
+@media(min-width: 601px) and (max-width: 1000px) {
+
+    /* toamtosoup */
+    
+    .recipe-title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .recipe-contain {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+
+    }
+
+    .contain {
+        margin-top: 25px;
+    }
+
+    .recipe-text-creator {
+        display: flex;
+        flex-direction: column;
+        text-align: center;        
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}

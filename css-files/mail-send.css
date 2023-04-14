@@ -1,0 +1,23 @@
+.mail-send {
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ms-head {
+    margin-top: -35px;
+    margin-right: 100px;
+}
+
+.ms-headline {
+    font-size: 36px;
+    text-align: center;
+}
+
+.ms-text {
+    font-size: 25px;
+    text-align: center;
+}

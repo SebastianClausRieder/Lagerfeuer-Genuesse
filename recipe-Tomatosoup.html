@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Links -->
+    <!-- Museo Moderno -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Colonna MT -->
+    <link href="https://fonts.cdnfonts.com/css/colonna-mt" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/icon/logo.png">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css-files/header.css">
+    <link rel="stylesheet" href="css-files/recipe-master.css">
+    <link rel="stylesheet" href="css-files/footer.css">
+    <link rel="stylesheet" href="css-files/media-lines-vertikal.css">
+    <link rel="stylesheet" href="css-files/media-lines-horizontal.css">
+    <link rel="stylesheet" href="css-files/media-recipe-master-vertikal.css">
+    <link rel="stylesheet" href="css-files/media-recipe-master-horizontal.css">
+    <link rel="stylesheet" href="css-files/fonts.css">
+    <link rel="stylesheet" href="css-files/color.css">
+    <!-- Java Scripts -->
+    <script src="js-files/script.js"></script>
+    <script src="js-files/convert-Tomatosoup.js"></script>
+    <script type="text/javascript">
+        var cs = 4;
+        function Input(id){
+            document.getElementById('Bewertung').innerHTML = '<form method="post">';
+            for(var i = 1; i <= 5; i++){
+                if(i <= id){
+                    document.getElementById('Bewertung').innerHTML += '<input type="submit" id="'+i+'" onmouseover="Input('+i+');" class="eins" value="'+i+'" />';
+                }else{
+                    document.getElementById('Bewertung').innerHTML += '<input type="submit" id="'+i+'" onmouseover="Input('+i+');" class="null" value="'+i+'" />';
+                }
+            }
+            document.getElementById('Bewertung').innerHTML += '</form>';
+        }
+    </script>
+    <!-- Titel -->
+    <title>Tomatensuppe</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Scrollbalcken */
+        /* width */
+        ::-webkit-scrollbar {
+            background-color: #151515;
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #C55A11;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            box-shadow: 0px 0.2px 5px 2px #C55A11;
+        }
+    </style>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="headline.html" class="distance"></div>
+    <div class="errorMsg-center font-museo font-color" id="errorMsg" onclick="hideMsg()">
+        <div class="errormsg">
+            <p>Bitte geben Sie mindestens<br>
+                1 Portion an!</p>
+            <p>Klicken Sie hier für weiter</p>
+        </div>
+    </div>
+    <div class="recipe font-museo font-color bg-color">
+        <img src="img/rezept-header.jpg" class="rh1">
+        <h1 class="recipe-title">Rauchige Tomaten-Suppe</h1>
+        <div class="contain-out">
+            <div class="recipe-contain">
+                <div class="contain-in">
+                    <div class="recipe-converter">
+                        <span class="recipe-crowd-calc">Zutaten für</span>
+                        <div class="converter">
+                            <input type="text" Id="Gesamt" value="4" class="recipe-crowd font-museo font-color"></input>
+                            <input type=button name="rezept" value="Personen" onClick="rezept();" class="rc-button font-museo font-color"></input>
+                        </div>
+                    </div>
+                    <table class="table-size">
+                        <tr class="bg-grey">
+                            <td class="left-table"><input type=text Id="ZutA" value="10"
+                                    class="item bg-grey font-museo font-color"> Stück</input></td>
+                            <td class="right-table">Fleich Tomaten</td>
+                        </tr>
+                        <tr class="bg-black">
+                            <td class="left-table"><input type=text Id="ZutB" value="2"
+                                    class="item bg-black font-museo font-color"> Stück</input></td>
+                            <td class="right-table">Zwiebel</td>
+                        </tr>
+                        <tr class="bg-grey">
+                            <td class="left-table"><input type=text Id="ZutC" value="2"
+                                    class="item bg-grey font-museo font-color"> Zehen</input></td>
+                            <td class="right-table">Knoblauch</td>
+                        </tr>
+                        <tr class="bg-black">
+                            <td class="left-table"><input type=text Id="ZutD" value="500"
+                                    class="item bg-black font-museo font-color"> ml</input></td>
+                            <td class="right-table">Brühe</td>
+                        </tr>
+                        <tr class="bg-grey">
+                            <td class="left-table"><input type=text Id="ZutE" value="3"
+                                    class="item bg-grey font-museo font-color"> el</input></td>
+                            <td class="right-table">Tomatenmark</td>
+                        </tr>
+                        <tr class="bg-black">
+                            <td class="left-table"><input type=text Id="ZutF" value="10"
+                                    class="item bg-black font-museo font-color"> Blatt</input></td>
+                            <td class="right-table">Basilikum</td>
+                        </tr>
+                        <tr class="bg-grey">
+                            <td class="left-table">Abschmecken mit </td>
+                            <td class="right-table">Salz</td>
+                        </tr>
+                        <tr class="bg-black">
+                            <td class="left-table"></td>
+                            <td class="right-table">Pfeffer aus der Mühle</td>
+                        </tr>
+                        <tr class="bg-grey">
+                            <td class="left-table"></td>
+                            <td class="right-table">Honig oder Zucker</td>
+                        </tr>
+                        <tr class="bg-black">
+                            <td class="left-table"><input type=text Id="ZutG" value="200"
+                                    class="item bg-black font-museo font-color"> g</input></td>
+                            <td class="right-table">Schmand</td>
+                        </tr>
+                        <tr class="bg-grey">
+                            <td class="left-table">Zum Braten</td>
+                            <td class="right-table">Olvien Öl</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contain-in">
+                    <span class="serv">Unser servier Vorschlag</span>
+                    <img class="recipe-pic" src="img/rezept-pic/tomaten-suppe.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="contain-out">
+            <div class="recipe-text-creator">
+                <p class="recipe-text">Stellen Sie einen feuerfesten Topf in die Glut.<br>
+                    Die Fleischtomaten waschen und halbieren, den Strunk rausschneiden und<br> die Tomaten in grobe
+                    Würfel
+                    schneiden.<br>
+                    Die Zwiebel schälen und ebenfalls würflig schneiden. Etwas Oliven-Öl in den Topf gießen und
+                    die<br>
+                    Zwiebelwürfel darin anbraten.<br>
+                    Den Knoblauch klein schneiden oder pressen und zu den Zwiebeln in den Topf geben.<br>
+                    Wenn die Zwiebel goldbraun gedünstet sind, die Tomatenwürfel dazu geben und kurz mit rösten.<br>
+                    Das Ganze mit der Brühe aufgießen, Deckel darauf und ca. 30 min Kochen lassen.<br>
+                    Den Topf von der heißen Glut in eine nicht so heiße Region stellen und das Tomatenmark
+                    einrühren.<br>
+                    Das Basilikum in Streifen schneiden und in die Suppe geben.<br> Das ganze mit Salz, Pfeffer und
+                    Honig
+                    abschmecken.<br>
+                    Auf die servierte Portion einen Esslöffel Schmant geben und genießen.
+                </p>
+                <div class="recipe-creator">
+                    <span>Rezept erstellt von</span>
+                    <img src="img/founder/basti.jpg" class="creator-pic" alt="">
+                    <span>Sebastian Rieder</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>

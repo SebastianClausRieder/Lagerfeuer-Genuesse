@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Font Links -->
+	<!-- Museo Moderno -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<!-- Colonna MT -->
+	<link href="https://fonts.cdnfonts.com/css/colonna-mt" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="img/icon/logo.png">
+	<!-- CSS Links -->
+	<link rel="stylesheet" href="css-files/header.css">
+	<link rel="stylesheet" href="css-files/recipe-master.css">
+	<link rel="stylesheet" href="css-files/footer.css">
+	<link rel="stylesheet" href="css-files/media-lines-vertikal.css">
+	<link rel="stylesheet" href="css-files/media-lines-horizontal.css">
+    <link rel="stylesheet" href="css-files/media-recipe-master-vertikal.css">
+    <link rel="stylesheet" href="css-files/media-recipe-master-horizontal.css">
+	<link rel="stylesheet" href="css-files/fonts.css">
+	<link rel="stylesheet" href="css-files/color.css">
+	<!-- Java Scripts -->
+	<script src="js-files/script.js"></script>
+	<script src="js-files/convert-beef_steak.js"></script>
+	<!-- Titel -->
+	<title>Rinder Steak</title>
+	<style>
+		body {
+			margin: 0px;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		/* Scrollbalcken */
+		/* width */
+		::-webkit-scrollbar {
+			background-color: #151515;
+			width: 10px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			border-radius: 10px;
+		}
+
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #C55A11;
+			border-radius: 10px;
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			box-shadow: 0px 0.2px 5px 2px #C55A11;
+		}
+	</style>
+</head>
+
+<body onload="includeHTML()">
+	<div w3-include-html="headline.html" class="distance"></div>
+	<div class="errorMsg-center font-museo font-color" id="errorMsg"  onclick="hideMsg()">
+        <div class="errormsg">
+            <p>Bitte geben Sie mindestens<br>
+                1 Portion an!</p>
+            <p>Klicken Sie hier für weiter</p>
+        </div>
+    </div>
+	<div class="recipe font-museo font-color bg-color">
+		<img src="img/rezept-header.jpg" class="rh1">
+		<h1 class="recipe-title">Steak</h1>
+		<div class="contain-out">
+			<div class="recipe-contain">
+				<div class="contain-in">
+					<div class="recipe-converter">
+						<span class="recipe-crowd-calc">Zutaten für</span>
+						<div class="converter">
+							<input type=text Id="Gesamt" value="4" class="recipe-crowd font-museo font-color"></input>
+							<input type=button name="rezept" value="Personen" onClick="rezept();"
+								class="rc-button font-museo font-color"></input>
+						</div>
+					</div>
+					<table class="table-size">
+						<tr class="bg-grey">
+							<td class="left-table"><input type=text Id="ZutA" value="1"
+									class="item bg-grey font-museo font-color"> kg</input></td>
+							<td class="right-table">Rinder Rücken</td>
+						</tr>
+
+
+						<tr class="bg-black">
+							<td class="left-table">Abschmecken mit </td>
+							<td class="right-table">Salz</td>
+						</tr>
+						<tr class="bg-grey">
+							<td class="left-table"></td>
+							<td class="right-table">Pfeffer aus der Mühle</td>
+						</tr>
+						<tr class="bg-black">
+							<td class="left-table"></td>
+							<td class="right-table">Oliven Öl </td>
+						</tr>
+						<tr class="bg-grey">
+							<td class="left-table"><input type=text Id="ZutB" value="2"
+									class="item bg-grey font-museo font-color"> el</input></td>
+							<td class="right-table">Honig</td>
+						</tr>
+						<tr class="bg-black">
+							<td class="left-table">Zweig</td>
+							<td class="right-table">Rosmarin</td>
+						</tr>
+					</table>
+				</div>
+				<div class="contain-in">
+					<span class="serv">Unser servier Vorschlag</span>
+					<img class="recipe-pic" src="img/rezept-pic/steak.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="contain-out">
+		<div class="recipe-text-creator">
+			<p class="recipe-text">Das Fleisch in 4 schöne Steaks schneiden.<br>
+				Mit dem Rosmarinzweig das Oliven Öl auf das Fleisch streichen und das Fleisch auf ein Grillrost<br>gut
+				10cm über die Glut hä hängen.<br>
+				Nach ca 2 Minuten die Steaks wenden, mit Honig beträufeln und Salzen.<br> Nach wieder 2 Minuten den
+				Vorgang mit der anderen Seite wiederholen.<br>
+				Achtung! Das bereits gesalzene Steak nur noch 1 Minute je Seite Braten oder bis die
+				gewünschte<br>Kerntemperatur erreicht ist.<br>
+				Vom Rost nehmen, aufschneiden und mit Pfeffer Würzen.<br>
+				<br>
+
+				<b>KERNTEMPERATUR STEAKS VON RIND UND LAMM</b><br>
+
+				<b>-</b> 46 bis 48°C: Blue Rare (bleu): lauwarmer, roher Kern, roter Saft.<br>
+				<b>-</b> 49 bis 52°C: Rare (saignant): warmer, roter Kern, roter Saft.<br>
+				<b>-</b> 53 bis 57°C: Medium rare (anglais): hellroter, weicher Kern, roter Saft.<br>
+				<b>-</b> 58 bis 60°C: Medium (à point): rosa, mittelweicher Kern, rosa Saft.<br>
+				<b>-</b> 61 bis 65°C: Medium well (demi-anglais): rosa-grauer, fester Kern, klarer Saft.<br>
+				<b>-</b> ab 66°C: Well done (bien cuit): grau, relativ fest, klarer Saft.
+			</p>
+			<div class="recipe-creator">
+				<span>Rezept erstellt von</span>
+				<img src="img/founder/kevin.jpg" class="creator-pic" alt="">
+				<span>Kevin Funck</span>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div w3-include-html="footer.html"></div>
+</body>
+
+</html>

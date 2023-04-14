@@ -1,0 +1,45 @@
+@media(max-width: 600px) {
+
+    .recipe-title {
+        text-align: center;
+    }
+
+    .recipe-contain {
+        flex-direction: column-reverse;
+    }
+
+    .recipe-contain {
+        gap: 35px;
+    }
+
+    .contain-in {
+        width: 100%;
+    }
+
+    .table-size {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .item {
+        font-size: 14px;
+    }
+
+    .recipe-pic {
+        height: 200px;
+        width: 250px;
+    }
+
+    .recipe-text-creator {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .recipe-text {
+        width: 100%;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+}

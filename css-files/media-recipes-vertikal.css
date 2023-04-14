@@ -1,0 +1,36 @@
+@media(max-width: 600px) {
+
+    /* Tomatosoup */
+
+    .rh1 {
+        margin-top: 70px;
+    }
+
+    .recipe-title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .recipe-contain1 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+
+    .contain {
+        display: flex;
+        margin-top: 25px;
+        align-items: center;
+    }
+    
+    .recipe-text-creator {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+
+}

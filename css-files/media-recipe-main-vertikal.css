@@ -1,0 +1,17 @@
+@media(max-width: 600px) {
+
+    /* recipe-main */
+
+    .height {
+        height: auto;
+    }
+
+    .mrecipe-title {
+        text-align: center;
+    }
+
+    .mrecipes-buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

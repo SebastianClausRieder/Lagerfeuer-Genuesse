@@ -1,0 +1,87 @@
+.start-bg {
+    background-image: url(../img/background1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.welcome {
+    padding-right: 100px;
+}
+
+.w1 {
+    font-size: 30px;
+    text-shadow:  1px  1px 2px black,
+                1px -1px 2px black,
+                -1px  1px 2px black,
+                -1px -1px 2px black;
+}
+
+.w2 {
+    font-size: 50px;
+    text-align: center;
+    text-shadow:  1px  1px 2px black,
+                1px -1px 2px black,
+                -1px  1px 2px black,
+                -1px -1px 2px black;
+}
+
+.w3 {
+    font-size: 25px;
+    text-align: center;
+    text-shadow:  1px  1px 2px black,
+                1px -1px 2px black,
+                -1px  1px 2px black,
+                -1px -1px 2px black;
+}
+
+.founder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.founder-pic {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+
+.founder-button {
+    background-size: cover;
+    border-radius: 10px;
+    border: 1px solid #C55A11;
+    height: 40px;
+    width: 250px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 225ms ease-in-out;
+}
+.founder-button a {
+    text-decoration: none;
+}
+
+.founder-button:hover {
+    box-shadow: 0px 0.2px 5px 2px #C55A11;
+    transition: all 225ms ease-in-out;
+}
+
+.founder-button-text {
+    text-shadow:  1px  1px 2.5px black,
+        1px -1px 2.5px black,
+        -1px  1px 2.5px black,
+        -1px -1px 2.5px black;
+}
+
+.pic1 {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}

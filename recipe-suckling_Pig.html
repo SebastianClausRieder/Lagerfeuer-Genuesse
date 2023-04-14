@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Links -->
+    <!-- Museo Moderno -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Colonna MT -->
+    <link href="https://fonts.cdnfonts.com/css/colonna-mt" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/icon/logo.png">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css-files/header.css">
+    <link rel="stylesheet" href="css-files/recipe-master.css">
+    <link rel="stylesheet" href="css-files/footer.css">
+    <link rel="stylesheet" href="css-files/media-lines-vertikal.css">
+    <link rel="stylesheet" href="css-files/media-lines-horizontal.css">
+    <link rel="stylesheet" href="css-files/media-recipe-master-vertikal.css">
+    <link rel="stylesheet" href="css-files/media-recipe-master-horizontal.css">
+    <link rel="stylesheet" href="css-files/fonts.css">
+    <link rel="stylesheet" href="css-files/color.css">
+    <!-- Java Scripts -->
+    <script src="js-files/script.js"></script>
+    <script src="js-files/convert-Tomatosoup.js"></script>
+    <!-- Titel -->
+    <title>Spanferkel</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Scrollbalcken */
+        /* width */
+        ::-webkit-scrollbar {
+            background-color: #151515;
+            width: 10px;
+
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #C55A11;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            box-shadow: 0px 0.2px 5px 2px #C55A11;
+        }
+    </style>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="headline.html" class="distance"></div>
+    <div class="errorMsg-center font-museo font-color" id="errorMsg"  onclick="hideMsg()">
+        <div class="errormsg">
+            <p>Bitte geben Sie mindestens<br>
+                1 Portion an!</p>
+            <p>Klicken Sie hier für weiter</p>
+        </div>
+    </div>
+    <div class="recipe font-museo font-color bg-color">
+        <img src="img/rezept-header.jpg" class="rh1">
+        <h1 class="recipe-title">Spanferkel</h1>
+        <div class="contain-out">
+            <div class="recipe-contain">
+                <div class="contain-in">
+                    <div class="recipe-converter">
+                        <span class="recipe-crowd-calc">Zutaten für</span>
+                        <div class="converter">
+                            <input type=text Id="Gesamt" value="20" class="recipe-crowd font-museo font-color"></input>
+                            <input type=button name="rezept" value="Personen" onClick="rezept();"
+                                class="rc-button font-museo font-color"></input>
+                        </div>
+                    </div>
+                    <table class="table-size">
+                        <tr class="bg-grey">
+                            <td class="left-table"><input type=text Id="ZutA" value="5"
+                                    class="item bg-grey font-museo font-color"> kg</input></td>
+                            <td class="right-table">Spanferkel</td>
+                        </tr>
+                        <tr class="bg-black">
+                            <td class="left-table"> für die Marinade</td>
+                            <td class="right-table">Kümmel</td>
+                        </tr>
+                        <tr class="bg-grey">
+                            <td class="left-table"><input type=text Id="ZutC" value="10"
+                                    class="item bg-grey font-museo font-color"> Zehen</input></td>
+                            <td class="right-table">Knoblauch</td>
+                        </tr>
+                        <tr class="bg-black">
+                            <td class="left-table"></td>
+                            <td class="right-table">Majoran</td>
+                        </tr>
+                        <tr class="bg-grey">
+                            <td class="left-table"></td>
+                            <td class="right-table">Salz</td>
+                        </tr>
+                        <tr class="bg-black">
+                            <td class="left-table"><input type=text Id="ZutF" value="2"
+                                    class="item bg-black font-museo font-color"> el</input></td>
+                            <td class="right-table">Honig</td>
+                        </tr>
+                        <tr class="bg-grey">
+                            <td class="left-table"><input type=text Id="ZutG" value="100"
+                                    class="item bg-grey font-museo font-color"> ml</input></td>
+                            <td class="right-table">Sonnenblumen Öl</td>
+                        <tr class="bg-black">
+                            <td class="left-table"><input type=text Id="ZutH" value="2"
+                                    class="item bg-black font-museo font-color"> Stück</input></td>
+                            <td class="right-table">Zitrone</td>
+                        </tr>
+                        <tr class="bg-grey">
+                            <td class="left-table">zum aufstecken</td>
+                            <td class="right-table">Spanferkel Spieß</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contain-in">
+                    <span class="serv">Unser servier Vorschlag</span>
+                    <img class="recipe-pic" src="img/rezept-pic/Spanferkel.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="contain-out">
+            <div class="recipe-text-creator">
+                <p class="recipe-text">Das Spanferkel im Ganzen auf den Spieß stecken und mit einem scharfen Messer einritzen.<br>
+                    Das Öl mit dem Kümmel, Knoblauch, Majoran, Salz, und dem Honig verrühren, die Schale<br>
+                    der Zitrone abreiben und dann die Zitrone auspressen. Den Abrieb und den Saft der Zitrone in<br>
+                    die Marinade einrühren und auf das Spanferkel auftragen.<br>
+                    Den Spieß mit dem Spanferkel dicht ans Lagerfeuer stecken und alle paar Minuten drehen,<br>
+                    bis das Spanferkel durch und knusprig ist.<br>
+                    Übrige Marinade kann bei den Drehvorgängen mit aufs Spanferkel gegeben werden, bis sie alle ist.<br>
+                    Unser Tipp: Zum Schluss das Spanferkel mit Bier übergießen ergibt eine schöne knackige Kruste!
+                </p>
+                <div class="recipe-creator">
+                    <span>Rezept erstellt von</span>
+                    <img src="img/founder/basti.jpg" class="creator-pic" alt="">
+                    <span>Sebastian Rieder</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>

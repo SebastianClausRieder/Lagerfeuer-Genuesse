@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Links -->
+    <!-- Museo Moderno -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Colonna MT -->
+    <link href="https://fonts.cdnfonts.com/css/colonna-mt" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/icon/logo.png">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css-files/header.css">
+    <link rel="stylesheet" href="css-files/recipe-main.css">
+    <link rel="stylesheet" href="css-files/footer.css">
+    <link rel="stylesheet" href="css-files/media-lines-vertikal.css">
+    <link rel="stylesheet" href="css-files/media-lines-horizontal.css">
+    <link rel="stylesheet" href="css-files/media-recipe-main-vertikal.css">
+    <link rel="stylesheet" href="css-files/media-recipe-main-horizontal.css">
+    <link rel="stylesheet" href="css-files/fonts.css">
+    <link rel="stylesheet" href="css-files/color.css">
+
+    <!-- Java Scripts -->
+    <script src="js-files/script.js"></script>
+    <!-- Titel -->
+    <title>Rezepte</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Scrollbalcken */
+        /* width */
+        ::-webkit-scrollbar {
+            background-color: #151515;
+            width: 10px;
+
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #C55A11;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            box-shadow: 0px 0.2px 5px 2px #C55A11;
+        }
+    </style>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="headline.html" class="distance"></div>
+    <div class="height bg-color">
+        <div class="mrecipe font-museo font-color bg-color">
+            <img src="img/rezept-header.jpg" class="rh1">
+            <h1 class="mrecipe-title">Das passende Rezept für ihr Lagerfeuer</h1>
+            <div class="mrecipes-buttons">
+                <a href="recipe-Tomatosoup.html" class="mrecipe-text mrecipes-buttons-child font-color">
+                    <img class="mrecipes-img" src="img/rezept-pic/suppen.jpg">
+                    <p><strong>Genüssliche<br>Suppen</strong></p>
+                </a>
+                <a href="recipe-kettle_goulash.html" class="mrecipe-text mrecipes-buttons-child font-color">
+                    <img class="mrecipes-img" src="img/rezept-pic/kessel.jpg">
+                    <p><strong>Schmackige<br>Kessel-Gerichte</strong></p>
+                </a>
+                <a href="recipe-suckling_Pig.html" class="mrecipe-text mrecipes-buttons-child font-color">
+                    <img class="mrecipes-img" src="img/rezept-pic/im-ganzen.jpg">
+                    <p><strong>Im Ganzen<br>gegart</strong></p>
+                </a>
+                <a href="recipe-beef_steak.html" class="mrecipe-text mrecipes-buttons-child font-color">
+                    <img class="mrecipes-img" src="img/rezept-pic/steaks.jpg">
+                    <p><strong>Saftige<br>Steaks</strong></p>
+                </a>
+                <a href="recipe-Side_dishes.html" class="mrecipe-text mrecipes-buttons-child font-color">
+                    <img class="mrecipes-img" src="img/rezept-pic/beilagen.jpg">
+                    <p><strong>Leckere<br>Beilagen</strong></p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>
